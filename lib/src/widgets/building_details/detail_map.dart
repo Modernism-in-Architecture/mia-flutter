@@ -86,8 +86,8 @@ class DetailMapState extends ConsumerState<DetailMap> {
                       child: FlutterMap(
                           key: ValueKey(MediaQuery.of(context).orientation),
                           options: MapOptions(
-                              center: LatLng(widget.latitude, widget.longitude),
-                              zoom: 13,
+                              initialCenter: LatLng(widget.latitude, widget.longitude),
+                              initialZoom: 13,
                               maxZoom: 15,
                               minZoom: 3,
                           ),
